@@ -1,4 +1,16 @@
-Usually, the following procedure has to be followed:
+This repository contains the source code for the following publication: 
+Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", submitted to the Journal of the Audio Engineering Society in 2020.
+
+
+The Autonomous Robot Twin System for Room Acoustic Measurements (ARTSRAM) is capable of measuring room impulse responses (RIRs) with variable sound source and receiver positions. It consists of two independent robots that are able to move freely in a room. Both robots are equipped with collision sensors, thus allowing them to explore the room autonomously. The measurements of RIRs are complemented with corresponding position information of the robots.
+
+The base for each robot is an iRobot Create 2 Roomba robot, which is controlled by a Raspberry Pi single-board computer. HTC Vive trackers of the second generation are used for tracking the position of the robots. Although it would be possible to mount several microphone arrays and loudspeakers on each of the robots to enable multi-way RIR measurements, we chose to clearly distinguish between a source and a receiver robot in this paper. The source robot uses a Minirig MRBT-2 portable loudspeaker to play back excitation signals that are recorded by the receiver robot with a Zoom H3-VR first-order microphone array. The resulting RIRs are stored on a microSD card inserted into the receiver robot's Raspberry Pi.
+
+The entire measurement procedure is implemented in Python. It is controlled by a main measurement script running on a separate measurement laptop. The main measurement script sends commands over a TCP network socket to the Raspberry Pis of the source and receiver robot. Subsequently, the corresponding server scripts running on the Raspberry Pis handle the commands. For example, the server scripts can trigger robot movements or an RIR measurement. The HTC Vive trackers directly communicate with the measurement laptop over another wireless connection, thus allowing the main measurement script to immediately access and store the positions of both robots.
+
+
+Usually, the following procedure has to be followed to start the measurement procedure:
+
 0. Adapt all parameters in measurement_params.py to your setup, especially IP addresses around
 device names are crucial for the script to work properly. Place robots in middle of the room,
 directly facing each other and as close as possible
