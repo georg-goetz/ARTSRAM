@@ -1,0 +1,3 @@
+[console_scripts]
+create2 = irobot.console_interfaces.create2:main
+

@@ -1,0 +1,7 @@
+sounddevice
+scipy
+openvr
+matplotlib
+numpy
+pandas
+-e git+https://github.com/julianpistorius/irobot.git@master#egg=irobot
