@@ -1,6 +1,6 @@
 # Autonomous Robot Twin System for Room Acoustic Measurements (ARTSRAM)
 This repository contains the source code for the following publication: 
-Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", submitted to the Journal of the Audio Engineering Society in 2020.
+> Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", submitted to the Journal of the Audio Engineering Society in 2020.
 
 ## System Overview
 The Autonomous Robot Twin System for Room Acoustic Measurements (ARTSRAM) is capable of measuring room impulse responses (RIRs) with variable sound source and receiver positions. It consists of two independent robots that are able to move freely in a room. Both robots are equipped with collision sensors, thus allowing them to explore the room autonomously. The measurements of RIRs are complemented with corresponding position information of the robots.
