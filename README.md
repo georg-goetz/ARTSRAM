@@ -3,6 +3,7 @@ This repository contains the source code for the following publication:
 > Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", Journal of the Audio Engineering Society, Vol. 69, No. 4, April 2021.
 
 Please find the companion page here: http://research.spa.aalto.fi/publications/papers/artsram/
+
 Please find the published paper here: https://www.aes.org/e-lib/browse.cfm?elib=21033
 
 ## System Overview
