@@ -1,6 +1,8 @@
 # Autonomous Robot Twin System for Room Acoustic Measurements (ARTSRAM)
 This repository contains the source code for the following publication: 
-> Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", submitted to the Journal of the Audio Engineering Society in 2020.
+> Georg Götz, Abraham Martinez Ornelas, Sebastian J. Schlecht and Ville Pulkki, "Autonomous Robot Twin System for Room Acoustic Measurements", Journal of the Audio Engineering Society, Vol. 69, No. 4, April 2021.
+> Please find the companion page here: http://research.spa.aalto.fi/publications/papers/artsram/
+> Please find the published paper here: https://www.aes.org/e-lib/browse.cfm?elib=21033
 
 ## System Overview
 The Autonomous Robot Twin System for Room Acoustic Measurements (ARTSRAM) is capable of measuring room impulse responses (RIRs) with variable sound source and receiver positions. It consists of two independent robots that are able to move freely in a room. Both robots are equipped with collision sensors, thus allowing them to explore the room autonomously. The measurements of RIRs are complemented with corresponding position information of the robots.
@@ -43,8 +45,6 @@ executing robo_socket_client.py.
 - Power banks should be attached at the front of the robot, because they are good for stability
 - Connect all devices with the Raspberry Pis
 - Turn on Microphone array and put it into I/O Mode with Ambisonics (e.g. B-Format, FuMa) settings, write down which convention you picked
-- Set the gain of the microphone array to 1
-- Use the low voltage loudspeaker input (i.e. the lower one when the membrane is pointing upwards)
 - Make sure all IP addresses in the scripts are correct
 - Run ifconfig -a on the Pis or ipconfig -all on a Mac measurement laptop to find out
 - Set the max straight drive times according to room dimensions
